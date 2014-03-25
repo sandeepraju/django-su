@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: django-su
+Version: 0.1
+Summary: Login as any user from the Django admin interface, then switch back when done
+Home-page: https://github.com/continuous/django-su
+Author: Adam Charnock
+Author-email: adam@continuous.io
+License: Apache Software License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Topic :: Security
+Classifier: Framework :: Django
