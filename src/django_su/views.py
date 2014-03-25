@@ -13,6 +13,8 @@ from django_su.utils import can_su_login
 @user_passes_test(can_su_login)
 def login_as_user(request, user_id):
     su_user = get_object_or_404(User, pk=user_id)
+    if su_user.username in settings.SU_FORBIDDEN_USERS:
+        return HttpResponseRedirect("/")
     exit_user_pk = request.user.pk
     su_user.backend = settings.AUTHENTICATION_BACKENDS[0]
     exit_users_pk = request.session.get("exit_users_pk", default=[])
